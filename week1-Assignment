@@ -1,0 +1,164 @@
+Assignment 1
+Questions:
+Create a webpage with a title, a main heading,
+and two paragraphs.
+
+1.Add an image with a caption below it and
+center both on the page.
+
+2.Style all paragraphs with a different font
+family, line height, and text alignment.
+
+3.Design a styled button with padding, border,
+and a hover effect.
+
+4.Create a simple table with three columns and
+three rows, and a basic form with two input
+fields and a submit button.
+
+HTML and CSS Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML & CSS Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: beige;
+    }
+
+    h1 {
+      text-align: center;
+      color:black;
+    }
+
+    /* Question 3: Paragraph styling */
+    p {
+      font-family: 'Georgia', serif;
+      line-height: 1.8;
+      text-align: justify;
+      color: black;
+    }
+
+    /* Question 2: Image & caption centered */
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .caption {
+      font-style: italic;
+      color: grey;
+      text-align: center;
+    }
+
+    /* Question 4: Styled button */
+    .styled-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 20px 0;
+      background-color: #3498db;
+      color: white;
+      border: 2px solid #2980b9;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .styled-button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Question 5: Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Question 5: Form styling */
+    form {
+      margin-top: 30px;
+      background-color: grey;
+      padding: 15px;
+      border: 1px solid grey;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Question 1: Title, Heading, Paragraphs -->
+  <h1>Welcome to My Assignment Page</h1>
+
+  <p>This is the first paragraph. It introduces the content of the page and welcomes visitors with a friendly tone.</p>
+  <p>This is the second paragraph. It provides additional information and encourages the user to continue exploring the webpage.</p>
+
+  <!-- Question 2: Image with caption centered -->
+  <div class="image-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTokxh8gi0P-ZoGgL4wTS3b-_MHq6a8a96uw&s" alt="Sample Image">
+    <p class="caption">Michael Jordan.</p>
+  </div>
+
+  <!-- Question 4: Styled Button -->
+  <div style="text-align: center;">
+    <button class="styled-button">Click Me</button>
+  </div>
+
+  <!-- Question 5: Simple Table -->
+  <h2>Sample Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>25</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>30</td>
+      <td>London</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>28</td>
+      <td>Paris</td>
+    </tr>
+  </table>
+
+  <!-- Question 5: Basic Form -->
+  <h2>Contact Form</h2>
+  <form>
+    <label for="username">Name:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit" class="styled-button">
+  </form>
+
+</body>
+</html>
